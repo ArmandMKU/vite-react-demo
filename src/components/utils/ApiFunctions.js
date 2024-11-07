@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const api = axios.create({
   baseURL: process.env.REACT_APP_API_URL,
-  // baseURL: "http://localhost:9192"
+  // baseURL: "http://localhost:9192",
 });
 
 export const getHeader = () => {
@@ -62,9 +62,9 @@ export async function getRoomTypes() {
 /* This function gets all rooms from the database */
 export async function getAllRooms() {
   try {
-    // console.log("starting getAllRooms")
+    console.log("starting getAllRooms");
     const result = await api.get("/rooms/all-rooms");
-    // console.log("getAllRooms result = ", result.data)
+    console.log("getAllRooms result = ", result.data);
     return result.data;
   } catch (error) {
     throw new Error("Error fetching rooms");
