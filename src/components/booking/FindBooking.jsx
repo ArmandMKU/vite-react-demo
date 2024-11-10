@@ -119,13 +119,13 @@ const FindBooking = () => {
               Arrivée:{" "}
               {dayjs(bookingInfo.checkInDate)
                 .subtract(1, "month")
-                .format("MMM Do, YYYY")}
+                .format("MMM D, YYYY")}
             </p>
             <p>
               Départ:{" "}
               {dayjs(bookingInfo.checkInDate)
                 .subtract(1, "month")
-                .format("MMM Do, YYYY")}
+                .format("MMM D, YYYY")}
             </p>
             <p>Nom et prénom(s): {bookingInfo.guestName}</p>
             <p>Adresse e-mail: {bookingInfo.guestEmail}</p>
