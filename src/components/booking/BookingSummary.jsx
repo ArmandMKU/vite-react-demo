@@ -42,12 +42,12 @@ const BookingSummary = ({ booking, payment, isFormValid, onConfirm }) => {
         </p>
         <p>
           Arrivée:{" "}
-          <strong>{dayjs(booking.checkInDate).format("MMM Do YYYY")}</strong>
+          <strong>{dayjs(booking.checkInDate).format("MMM D YYYY")}</strong>
           {/* <strong>{moment(booking.checkInDate).format("MMM Do YYYY")}</strong> */}
         </p>
         <p>
           Départ:{" "}
-          <strong>{dayjs(booking.checkOutDate).format("MMM Do YYYY")}</strong>
+          <strong>{dayjs(booking.checkOutDate).format("MMM D YYYY")}</strong>
           {/* <strong>{moment(booking.checkOutDate).format("MMM Do YYYY")}</strong> */}
         </p>
         <p>
