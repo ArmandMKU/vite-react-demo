@@ -170,7 +170,7 @@ const BookingForm = () => {
                         name="checkInDate"
                         value={booking.checkInDate}
                         placeholder="check-in-date"
-                        min={dayjs().format("MMM Do, YYYY")}
+                        min={dayjs().format("MMM D, YYYY")}
                         // min={moment().format("MMM Do, YYYY")}
                         onChange={handleInputChange}
                       />
@@ -193,7 +193,7 @@ const BookingForm = () => {
                         name="checkOutDate"
                         value={booking.checkOutDate}
                         placeholder="check-out-date"
-                        min={dayjs().format("MMM Do, YYYY")}
+                        min={dayjs().format("MMM D, YYYY")}
                         // min={moment().format("MMM Do, YYYY")}
                         onChange={handleInputChange}
                       />
