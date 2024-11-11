@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { DateRangePicker } from "react-date-range";
-import locale from "date-fns/locale/fr-FR";
+// import locale from "date-fns/locale/fr-FR";
 
 const DateSlider = ({ onDateChange, onFilterChange }) => {
   const [dateRange, setDateRange] = useState({
@@ -29,13 +29,11 @@ const DateSlider = ({ onDateChange, onFilterChange }) => {
   return (
     <>
       <h5>Filtrer les réservations par date</h5>
-      <LocalizationProvider dateAdapter={AdapterDateFns} locale={locale}>
-        <DateRangePicker
-          ranges={[dateRange]}
-          onChange={handleSelect}
-          className="mb-4"
-        />
-      </LocalizationProvider>
+      <DateRangePicker
+        ranges={[dateRange]}
+        onChange={handleSelect}
+        className="mb-4"
+      />
       <button className="btn btn-secondary" onClick={handleClearFilter}>
         Enlever le filtre
       </button>
