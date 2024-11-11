@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { DateRangePicker } from "react-date-range";
-import locale from "dayjs/locale/fr";
+// import locale from "dayjs/locale/fr";
 // import locale from "date-fns/locale/fr-FR";
 
 const DateSlider = ({ onDateChange, onFilterChange }) => {
@@ -32,7 +32,7 @@ const DateSlider = ({ onDateChange, onFilterChange }) => {
       <h5>Filtrer les réservations par date</h5>
       <DateRangePicker
         ranges={[dateRange]}
-        locale={locale}
+        // locale={locale}
         onChange={handleSelect}
         className="mb-4"
       />
